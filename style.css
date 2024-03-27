@@ -71,3 +71,25 @@ body{
 .hide{
     display: none;
 }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .box {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 901px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+}
