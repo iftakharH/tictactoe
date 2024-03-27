@@ -27,14 +27,14 @@ const resetGame = () => {
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        if (turn0){     
+        if (turnO){     
             //player0
             box.innerText = "O";
-            turn0 = false;
+            turnO = false;
         } else {        
             //playerX
             box.innerText = "X";
-            turn0 = "true";
+            turnO = "true";
         }
         box.disabled = "true";
         count++;
@@ -55,14 +55,14 @@ const gameDraw = () => {
 
 const disableBoxes = () => {
     for(let box of boxes){
-        box.disabled =true;
+        box.disabled = true;
     }
 };
 
 const enableBoxes = () => {
     for(let box of boxes){
         box.disabled =false;
-        box.innerText = "";
+        box.innerText = " ";
     }
 };
 
@@ -80,8 +80,8 @@ const checkWinner = () => {
 
         if(pos1val != "" && pos2val != "" && pos3val != ""){
             if(pos1val === pos2val && pos2val === pos3val){
-                console.log("Winner", pos1val);
                 showWinner(pos1val);
+                return true;
             }
         }
     }
