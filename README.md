@@ -1,3 +1,3 @@
 # tictactoe.github.io
 
-<h2>simple mini project (tic-tac-toe) using html,css and javascript</h2>
+<h4>simple mini project (tic-tac-toe) using HTML, CSS and JavaScript</h4>
